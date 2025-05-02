@@ -1,0 +1,12 @@
+MASTER
+    - git1.py
+    - git2.py
+
+DEV 
+    - git1.py
+    - git2.py
+
+PROD
+    - git1.py
+    - git2.py
+    - prod.py (git add  + git commit까지 완료)
