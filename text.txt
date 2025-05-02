@@ -13,3 +13,32 @@ PROD
     - prod.py (git add  + git commit까지 완료)
 =======
 >>>>>>> prod
+
+
+GITHUB UI에서 바로 파일 변경은 굉장히 드물게 발생
+    - 되도록이면 UI에서 파일 수정은 지양
+
+GITHUB에서 파일 수정 시
+    1) git pull
+    - github 코드를 작업 디렉토리로 가져와 준다.
+    2) git push
+    - 작업 디렉토리의 변경사항을 github에 올려준다.
+
+작업 디렉토리에서 코드 진행
+GIUTHUB UI에서 REFO 생성
+GITHUB로 코드 push
+
+GITHUB REFO에서 작업이 진행이 된 경우:
+해당 REFO의 코드를 작업 디렉토리로 한방에 가져오고 싶다!
+    - git clone [원격 REFO 주소]
+    - git clone [원격 REFO 주소][설정할 폴더 이름]
+
+GIT CLONE 진행 시 WORKFLOW
+    1) GITHUB UI에서 REFO 생성 시 필요한 기본 파일도 같이 생성
+    2) GIT CLONE을 통해 작업 디렉토리로 가져온다.
+    3) 작업 디렉토리에서 형상 관리 작업 진행
+
+최신 커밋 내용 수정 방법
+    1) git commit --amend
+    2) vi 편집기에서 커밋 내용 수정 후 저장
+    3) git log로 커밋 내용 변경 확인
